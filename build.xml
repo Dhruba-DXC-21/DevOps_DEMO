@@ -1,4 +1,4 @@
-<home="Hello World Project" default="info">
+<project="Hello World Project" default="info">
 
 <target name="info">
 
