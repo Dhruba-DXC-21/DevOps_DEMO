@@ -1,0 +1,12 @@
+---
+- name: Run PowerShell Script
+  hosts: 172.31.1.130
+  gather_faces: false
+  task:
+  - name: Copy the poershellscript
+    win_copy:
+      src: file/hello.ps1
+      dest: C:\Windows\Temp\hello.psq
+      
+  - name: Run the script
+    win_shell: C:\Windows\Temp\Hellow.ps1 >>C:\Windows\Temp\op.txt
