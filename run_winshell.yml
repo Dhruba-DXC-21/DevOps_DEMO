@@ -1,7 +1,7 @@
 ---
 - name: Run PowerShell Script
   hosts: 172.31.1.130
-  gather_faces: false
+  gather_facts: false
   task:
   - name: Copy the poershellscript
     win_copy:
